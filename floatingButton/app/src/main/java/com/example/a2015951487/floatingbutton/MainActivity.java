@@ -30,8 +30,8 @@ public class MainActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Here's a Snackbar", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Toast.makeText(getApplicationContext(),
+                        "Aqui acontece a mágica!", Toast.LENGTH_LONG).show();
             }
         });
 

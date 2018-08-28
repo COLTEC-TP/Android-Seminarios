@@ -22,3 +22,5 @@ Sua apresentação deverá ter, obrigatóriamente:
 1. O que é?
 1. Como funciona?
 1. Exemplo de uso funcional (código disponível no github)
+
+Link apresentação: https://docs.google.com/presentation/d/1QPlgypCVhANfk8OnNktVc84e48qobrrpDR046rJMsio/edit?usp=sharing
