@@ -25,6 +25,7 @@ public class Bluetooth extends AppCompatActivity {
     public Button btn_connect_server;
     public Button btn_send;
     public static TextView output_text;
+    public static  String output_text_string = "";
     public EditText input_text;
     public String macSelected = "";
 
@@ -41,7 +42,8 @@ public class Bluetooth extends AppCompatActivity {
             else if(dataString.equals("---S"))
                 statusMessage.setText("Conectado :D");
             else {
-                output_text.setText(dataString);
+                output_text_string += "ele: " + dataString + "\n";
+                output_text.setText(output_text_string);
             }
         }
     };
@@ -171,6 +173,9 @@ public class Bluetooth extends AppCompatActivity {
 
     public void sendMessage() {
         String msg = input_text.getText().toString();
+        output_text_string += "você: " + msg + "\n";
+        output_text.setText(output_text_string);
+        input_text.setText("");
         byte[] data = msg.getBytes();
         connection.write(data);
     }
